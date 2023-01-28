@@ -6,7 +6,7 @@ from azure.identity import ClientSecretCredential
 
 users_url = 'https://graph.microsoft.com/v1.0/users'
 ca_url = 'https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies'
-test_ca_url = 'https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/testCA.json'
+test_ca_url = ['https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/testCA.json, https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/testCA2.json, https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/testCA3.json']
 
 # Create a ServicePrincipalCredentials object
 credentials = ClientSecretCredential(
@@ -18,23 +18,17 @@ credentials = ClientSecretCredential(
 # Create a Graph client
 graph_client = GraphClient(credential=credentials)
 #client = GraphClient(user)
-
 # Get the list of users
 #users_read = graph_client.get(users_url)
 #print(users_read.json())
-
-
 #Get the list of policies
-policies = graph_client.get(ca_url)
-
+#policies = graph_client.get(ca_url)
 #for policy in policies.json()['value']:
   #  print(policy['displayName'])
 
 #Create a new policy
-re = requests.get(test_ca_url).json()
-new_policy = graph_client.post(ca_url, json=re)
-
-
-
-
-
+print(test_ca_url)
+for cap in test_ca_url:
+    re = requests.get(cap).json()
+    print(re)
+    #new_policy = graph_client.post(ca_url, json=re)
