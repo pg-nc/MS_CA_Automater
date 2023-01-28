@@ -6,7 +6,7 @@ from azure.identity import ClientSecretCredential
 
 users_url = 'https://graph.microsoft.com/v1.0/users'
 ca_url = 'https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies'
-test_ca_url = ['https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/testCA.json, https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/testCA2.json, https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/testCA3.json']
+test_ca_url = ['https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/testCA.json', 'https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/testCA2.json', 'https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/testCA3.json']
 
 # Create a ServicePrincipalCredentials object
 credentials = ClientSecretCredential(
@@ -27,8 +27,7 @@ graph_client = GraphClient(credential=credentials)
   #  print(policy['displayName'])
 
 #Create a new policy
-print(test_ca_url)
 for cap in test_ca_url:
     re = requests.get(cap).json()
     print(re)
-    #new_policy = graph_client.post(ca_url, json=re)
+    new_policy = graph_client.post(ca_url, json=re)
