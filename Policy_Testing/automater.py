@@ -3,7 +3,7 @@ import requests
 from msgraph.core import GraphClient
 import msgraph.core
 from azure.identity import ClientSecretCredential
-
+#Variables
 users_url = 'https://graph.microsoft.com/v1.0/users'
 ca_url = 'https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies'
 test_ca_url = ['https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/testCA.json', 'https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/testCA2.json', 'https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/testCA3.json']
@@ -18,11 +18,8 @@ credentials = ClientSecretCredential(
 # Create a Graph client
 graph_client = GraphClient(credential=credentials)
 
-
 # Collect all Base Protection Policies
 print('Collecting Base Protection Policies')
-
-
 
 #Create a new policy
 print('Creating new policy')
