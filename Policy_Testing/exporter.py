@@ -7,7 +7,7 @@ import os
 
 #Variables
 users_url = 'https://graph.microsoft.com/v1.0/users'
-ca_url = 'https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies'
+ca_url = 'https://graph.microsoft.com/beta/identity/conditionalAccess/policies'
 grp_url = 'https://graph.microsoft.com/v1.0/groups'
 test_ca_url = ['https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/testCA.json', 'https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/testCA2.json', 'https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/testCA3.json']
 base_url = 'https://github.com/y0uf0ol/MS_CA_Automater/blob/main/Policy_Testing/Base%20Protection/Links.md' # Base Protection Policies
