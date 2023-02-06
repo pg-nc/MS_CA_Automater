@@ -5,7 +5,7 @@ import msgraph.core
 from azure.identity import ClientSecretCredential
 #Variables
 users_url = 'https://graph.microsoft.com/v1.0/users'
-ca_url = 'https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies'
+ca_url = 'https://graph.microsoft.com/beta/identity/conditionalAccess/policies'
 grp_url = 'https://graph.microsoft.com/v1.0/groups'
 test_ca_url = ['https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/CA100_BaseProtection_%20AllUsers_RegisterSecurityInfo_AllePlattformen_UntrustedLocation_BlockAccess.json',
 'https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/CA101_BaseProtection_Admins_AlleApps_AllePlattformen_RequireMFA.json',
