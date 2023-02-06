@@ -21,7 +21,7 @@ graph_client = GraphClient(credential=credentials)
 
 # Creating base protection groups
 
-graph_client.post(grp_url, json={"description": "Base Protection Group", "displayName": "Base Protection Group", "groupTypes": ["Unified"], "mailEnabled": False, "mailNickname": "BaseProtectionGroup", "securityEnabled": True})
+#graph_client.post(grp_url, json={"description": "Base Protection Group", "displayName": "Base Protection Group", "groupTypes": ["Unified"], "mailEnabled": False, "mailNickname": "BaseProtectionGroup", "securityEnabled": True})
 
 # Collect all Base Protection Policies
 print('Collecting Base Protection Policies')
