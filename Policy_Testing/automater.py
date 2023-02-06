@@ -6,6 +6,7 @@ from azure.identity import ClientSecretCredential
 #Variables
 users_url = 'https://graph.microsoft.com/v1.0/users'
 ca_url = 'https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies'
+grp_url = 'https://graph.microsoft.com/v1.0/groups'
 test_ca_url = ['https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/testCA.json', 'https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/testCA2.json', 'https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/testCA3.json']
 base_url = 'https://github.com/y0uf0ol/MS_CA_Automater/blob/main/Policy_Testing/Base%20Protection/Links.md' # Base Protection Policies
 
@@ -17,6 +18,10 @@ credentials = ClientSecretCredential(
 )
 # Create a Graph client
 graph_client = GraphClient(credential=credentials)
+
+# Creating base protection groups
+
+graph_client.post(grp_url, json={"description": "Base Protection Group", "displayName": "Base Protection Group", "groupTypes": ["Unified"], "mailEnabled": False, "mailNickname": "BaseProtectionGroup", "securityEnabled": True})
 
 # Collect all Base Protection Policies
 print('Collecting Base Protection Policies')
