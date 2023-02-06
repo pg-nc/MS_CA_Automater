@@ -7,7 +7,7 @@ from azure.identity import ClientSecretCredential
 users_url = 'https://graph.microsoft.com/v1.0/users'
 ca_url = 'https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies'
 grp_url = 'https://graph.microsoft.com/v1.0/groups'
-test_ca_url = ['https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/CA506_AttackSurfaceReduction_SeviceAccounts_AllApps_AllPlatforms_UntrustedLocation_BlockAccess.json','https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/CA502_AttackSurfaceReduction_Admins_AllApps_UnknownDevicePlatforms_BlockAccess.json']
+test_ca_url = ['https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/CA506_AttackSurfaceReduction_SeviceAccounts_AllApps_AllPlatforms_UntrustedLocation_BlockAccess.json']
 base_url = 'https://github.com/y0uf0ol/MS_CA_Automater/blob/main/Policy_Testing/Base%20Protection/Links.md' # Base Protection Policies
 
 # Create a ServicePrincipalCredentials object
