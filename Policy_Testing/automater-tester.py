@@ -1,7 +1,6 @@
 import json
 import requests
 from msgraph.core import GraphClient
-import msgraph.core
 from azure.identity import ClientSecretCredential
 #Variables
 users_url = 'https://graph.microsoft.com/v1.0/users'
@@ -14,22 +13,23 @@ base_url = 'https://github.com/y0uf0ol/MS_CA_Automater/blob/main/Policy_Testing/
 
 # Create a ServicePrincipalCredentials object
 credentials = ClientSecretCredential(
-    client_id='bff19614-ce36-4ac6-8f76-157c7c9d1529',
-    client_secret='.ha8Q~-SfRNYTtcaCfXGjDtc1Ze2tjPkFaFX-czv',
-    tenant_id='8cf50f5b-4c61-42fc-b80c-4f9e5f2a19af'
+    client_id='ff20e021-d49f-4532-ab17-47dbf72181e4',
+    client_secret='GbV8Q~42Lw4vqx.2XBg8y8yFT8GYfLw3f7Kfkb43',
+    tenant_id='e0c0089e-139c-46e7-a82f-231cd621849e'
 )
 # Create a Graph client
 graph_client = GraphClient(credential=credentials)
 
 # Creating base protection groups
 
-#graph_client.post(grp_url, json={"description": "Base Protection Group", "displayName": "Base Protection Group", "groupTypes": ["Unified"], "mailEnabled": False, "mailNickname": "BaseProtectionGroup", "securityEnabled": True})
+graph_client.post(grp_url, json={"displayName": "SG_ServiceAccounts2", "mailEnabled": False, "mailNickname": "SG_ServiceAccounts2", "securityEnabled": True, "groupTypes": []})
+
 
 # Collect all Base Protection Policies
 print('Collecting Base Protection Policies')
 
 #Create a new policy
-print('Creating new policy')
-for cap in test_ca_url:
-    re = requests.get(cap).json()
-    new_policy = graph_client.post(ca_url, json=re)
+#print('Creating new policy')
+#for cap in test_ca_url:
+ #   re = requests.get(cap).json()
+  #  new_policy = graph_client.post(ca_url, json=re)
