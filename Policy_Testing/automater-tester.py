@@ -13,9 +13,9 @@ base_url = 'https://github.com/y0uf0ol/MS_CA_Automater/blob/main/Policy_Testing/
 
 # Create a ServicePrincipalCredentials object
 credentials = ClientSecretCredential(
-    client_id='ff20e021-d49f-4532-ab17-47dbf72181e4',
-    client_secret='GbV8Q~42Lw4vqx.2XBg8y8yFT8GYfLw3f7Kfkb43',
-    tenant_id='e0c0089e-139c-46e7-a82f-231cd621849e'
+    client_id=,
+    client_secret=,
+    tenant_id=
 )
 # Create a Graph client
 graph_client = GraphClient(credential=credentials)
