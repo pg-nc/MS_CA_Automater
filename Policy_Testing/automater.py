@@ -46,19 +46,17 @@ def create_group(group_name):
 for each in group_list:
     create_group(each)
     #get all created groupd IDs
-    grp = graph_client.get(grp_url).json()
-    for g in grp['value']:
+    get_grp = graph_client.get(grp_url).json()
+    for g in get_grp['value']:
         if g['displayName'] == each:
             print('Group ' + each + ' created with ID ' + g['id'])
 
 
-
-
-""" # Collect all Base Protection Policies
+ # Collect all Base Protection Policies
 print('Collecting Base Protection Policies')
 
 #Create a new policy
 print('Creating new policy')
 for cap in test_ca_url:
     re = requests.get(cap).json()
-    new_policy = graph_client.post(ca_url, json=re) """
+    new_policy = graph_client.post(ca_url, json=re)
