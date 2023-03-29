@@ -5,7 +5,7 @@ import msgraph.core
 from azure.identity import ClientSecretCredential
 #Variables
 client_id = input('Enter your appliction ID: ')
-client_secret = input('Enter your client secret: ') #q-F8Q~vvbathKuOBMP1sEPie9fZ2iOLkWPgO6aer
+client_secret = input('Enter your client secret: ')
 tenant_id = input('Enter your tenant ID: ')
 users_url = 'https://graph.microsoft.com/v1.0/users'
 ca_url = 'https://graph.microsoft.com/beta/identity/conditionalAccess/policies'
@@ -13,7 +13,6 @@ grp_url = 'https://graph.microsoft.com/v1.0/groups'
 test_ca_url = ['https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/testing_ca_variables.json',]
 base_url = 'https://github.com/y0uf0ol/MS_CA_Automater/blob/main/Policy_Testing/Base%20Protection/Links.md' # Base Protection Policies
 group_list = ['SG-CA-ServiceAccounts', 'SG-CA-InternalUsers']
-var_ca_svc ='9edde8f7-1562-4ffd-be05-b8989d200584'
 
 # Create a ServicePrincipalCredentials object
 credentials = ClientSecretCredential(

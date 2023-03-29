@@ -3,20 +3,20 @@ import requests
 from msgraph.core import GraphClient
 import msgraph.core
 from azure.identity import ClientSecretCredential
-import os
-
 #Variables
+client_id = input('Enter your appliction ID: ')
+client_secret = input('Enter your client secret: ')
+tenant_id = input('Enter your tenant ID: ')
 users_url = 'https://graph.microsoft.com/v1.0/users'
 ca_url = 'https://graph.microsoft.com/beta/identity/conditionalAccess/policies'
 grp_url = 'https://graph.microsoft.com/v1.0/groups'
-test_ca_url = ['https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/testCA.json', 'https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/testCA2.json', 'https://raw.githubusercontent.com/y0uf0ol/MS_CA_Automater/main/Policy_Testing/Base%20Protection/testCA3.json']
-base_url = 'https://github.com/y0uf0ol/MS_CA_Automater/blob/main/Policy_Testing/Base%20Protection/Links.md' # Base Protection Policies
+
 
 # Create a ServicePrincipalCredentials object
 credentials = ClientSecretCredential(
-    client_id=,
-    client_secret=,
-    tenant_id=
+    client_id=client_id,
+    client_secret=client_secret,
+    tenant_id=tenant_id
 )
 # Create a Graph client
 graph_client = GraphClient(credential=credentials)

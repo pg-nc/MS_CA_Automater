@@ -30,7 +30,7 @@
             ],
             "excludeUsers": [],
             "includeGroups": [],
-            "excludeGroups": [var_ca_svc],
+            "excludeGroups": [],
             "includeRoles": [],
             "excludeRoles": [],
             "includeGuestsOrExternalUsers": null,
