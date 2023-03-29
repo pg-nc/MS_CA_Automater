@@ -60,3 +60,4 @@ print('Creating new policy')
 for cap in test_ca_url:
     re = requests.get(cap).json()
     new_policy = graph_client.post(ca_url, json=re)
+    
