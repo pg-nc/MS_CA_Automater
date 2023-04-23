@@ -25,9 +25,7 @@
             "includeAuthenticationContextClassReferences": []
         },
         "users": {
-            "includeUsers": [
-                "All"
-            ],
+            "includeUsers": [],
             "excludeUsers": [],
             "includeGroups": [],
             "excludeGroups": [],

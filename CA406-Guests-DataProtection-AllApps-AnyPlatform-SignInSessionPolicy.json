@@ -1,1 +1,67 @@
-{"id": "a7e06667-010a-415f-81e9-41a644d81741", "displayName": "CA406-Guests-DataProtection-AllApps-AnyPlatform-SignInSessionPolicy", "createdDateTime": "2023-04-13T07:00:34.5172994Z", "modifiedDateTime": null, "state": "enabledForReportingButNotEnforced", "grantControls": null, "conditions": {"userRiskLevels": [], "signInRiskLevels": [], "clientAppTypes": ["all"], "servicePrincipalRiskLevels": [], "platforms": null, "locations": null, "times": null, "deviceStates": null, "devices": null, "clientApplications": null, "applications": {"includeApplications": ["All"], "excludeApplications": [], "includeUserActions": [], "includeAuthenticationContextClassReferences": []}, "users": {"includeUsers": [], "excludeUsers": [], "includeGroups": [], "excludeGroups": ["53afd8d4-7ba6-4728-832b-34c5ac878d4a", "ca8c55af-d2de-43ec-ba3f-61d53829f442"], "includeRoles": [], "excludeRoles": [], "excludeGuestsOrExternalUsers": null, "includeGuestsOrExternalUsers": {"guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider", "externalTenants": {"@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants", "membershipKind": "all"}}}}, "sessionControls": {"disableResilienceDefaults": false, "applicationEnforcedRestrictions": null, "cloudAppSecurity": null, "continuousAccessEvaluation": null, "secureSignInSession": null, "signInFrequency": {"value": 1, "type": "hours", "authenticationType": "primaryAndSecondaryAuthentication", "frequencyInterval": "timeBased", "isEnabled": true}, "persistentBrowser": {"mode": "never", "isEnabled": true}}}
+{
+    "id": "a7e06667-010a-415f-81e9-41a644d81741",
+    "displayName": "CA406-Guests-DataProtection-AllApps-AnyPlatform-SignInSessionPolicy",
+    "createdDateTime": "2023-04-13T07:00:34.5172994Z",
+    "modifiedDateTime": null,
+    "state": "enabledForReportingButNotEnforced",
+    "grantControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "all"
+        ],
+        "servicePrincipalRiskLevels": [],
+        "platforms": null,
+        "locations": null,
+        "times": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": []
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [],
+            "includeGroups": [],
+            "excludeGroups": [
+                "53afd8d4-7ba6-4728-832b-34c5ac878d4a",
+                "ca8c55af-d2de-43ec-ba3f-61d53829f442"
+            ],
+            "includeRoles": [],
+            "excludeRoles": [],
+            "excludeGuestsOrExternalUsers": null,
+            "includeGuestsOrExternalUsers": {
+                "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+                "externalTenants": {
+                    "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+                    "membershipKind": "all"
+                }
+            }
+        }
+    },
+    "sessionControls": {
+        "disableResilienceDefaults": false,
+        "applicationEnforcedRestrictions": null,
+        "cloudAppSecurity": null,
+        "continuousAccessEvaluation": null,
+        "secureSignInSession": null,
+        "signInFrequency": {
+            "value": 1,
+            "type": "hours",
+            "authenticationType": "primaryAndSecondaryAuthentication",
+            "frequencyInterval": "timeBased",
+            "isEnabled": true
+        },
+        "persistentBrowser": {
+            "mode": "never",
+            "isEnabled": true
+        }
+    }
+}

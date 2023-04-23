@@ -1,1 +1,55 @@
-{"id": "e6806dcb-9a1a-4e53-9969-a0f357a1bc9c", "displayName": "CA1005-Developers-AppProtection-MicrosoftIntuneEnrollment-AnyPlatform-MFA", "createdDateTime": "2023-04-13T07:00:02.4305855Z", "modifiedDateTime": null, "state": "enabledForReportingButNotEnforced", "sessionControls": null, "conditions": {"userRiskLevels": [], "signInRiskLevels": [], "clientAppTypes": ["all"], "servicePrincipalRiskLevels": [], "platforms": null, "locations": null, "times": null, "deviceStates": null, "devices": null, "clientApplications": null, "applications": {"includeApplications": ["0000000a-0000-0000-c000-000000000000"], "excludeApplications": [], "includeUserActions": [], "includeAuthenticationContextClassReferences": []}, "users": {"includeUsers": [], "excludeUsers": [], "includeGroups": ["5097f9ec-10fa-4acf-a242-1a568bf30f64"], "excludeGroups": ["53afd8d4-7ba6-4728-832b-34c5ac878d4a", "54ab779f-a23c-40f2-a72d-99e627033a62"], "includeRoles": [], "excludeRoles": [], "includeGuestsOrExternalUsers": null, "excludeGuestsOrExternalUsers": null}}, "grantControls": {"operator": "OR", "builtInControls": ["mfa"], "customAuthenticationFactors": [], "termsOfUse": [], "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('e6806dcb-9a1a-4e53-9969-a0f357a1bc9c')/grantControls/authenticationStrength/$entity", "authenticationStrength": null}}
+{
+    "id": "e6806dcb-9a1a-4e53-9969-a0f357a1bc9c",
+    "displayName": "CA1005-Developers-AppProtection-MicrosoftIntuneEnrollment-AnyPlatform-MFA",
+    "createdDateTime": "2023-04-13T07:00:02.4305855Z",
+    "modifiedDateTime": null,
+    "state": "enabledForReportingButNotEnforced",
+    "sessionControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "all"
+        ],
+        "servicePrincipalRiskLevels": [],
+        "platforms": null,
+        "locations": null,
+        "times": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "0000000a-0000-0000-c000-000000000000"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": []
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [],
+            "includeGroups": [
+                "5097f9ec-10fa-4acf-a242-1a568bf30f64"
+            ],
+            "excludeGroups": [
+                "53afd8d4-7ba6-4728-832b-34c5ac878d4a",
+                "54ab779f-a23c-40f2-a72d-99e627033a62"
+            ],
+            "includeRoles": [],
+            "excludeRoles": [],
+            "includeGuestsOrExternalUsers": null,
+            "excludeGuestsOrExternalUsers": null
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": [],
+        "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('e6806dcb-9a1a-4e53-9969-a0f357a1bc9c')/grantControls/authenticationStrength/$entity",
+        "authenticationStrength": null
+    }
+}

@@ -1,1 +1,57 @@
-{"id": "6548d700-9ef5-4e58-8660-3cdb5f33ffbe", "displayName": "CA1000-Developers-BaseProtection-AllApps-AnyPlatform-ForwardToDefenderforCloudApps", "createdDateTime": "2023-04-13T06:59:58.9917629Z", "modifiedDateTime": null, "state": "enabledForReportingButNotEnforced", "grantControls": null, "conditions": {"userRiskLevels": [], "signInRiskLevels": [], "clientAppTypes": ["all"], "servicePrincipalRiskLevels": [], "platforms": null, "locations": null, "times": null, "deviceStates": null, "devices": null, "clientApplications": null, "applications": {"includeApplications": ["None"], "excludeApplications": [], "includeUserActions": [], "includeAuthenticationContextClassReferences": []}, "users": {"includeUsers": [], "excludeUsers": [], "includeGroups": ["5097f9ec-10fa-4acf-a242-1a568bf30f64"], "excludeGroups": ["53afd8d4-7ba6-4728-832b-34c5ac878d4a", "54ab779f-a23c-40f2-a72d-99e627033a62"], "includeRoles": [], "excludeRoles": [], "includeGuestsOrExternalUsers": null, "excludeGuestsOrExternalUsers": null}}, "sessionControls": {"disableResilienceDefaults": false, "applicationEnforcedRestrictions": null, "signInFrequency": null, "persistentBrowser": null, "continuousAccessEvaluation": null, "secureSignInSession": null, "cloudAppSecurity": {"cloudAppSecurityType": "monitorOnly", "isEnabled": true}}}
+{
+    "id": "6548d700-9ef5-4e58-8660-3cdb5f33ffbe",
+    "displayName": "CA1000-Developers-BaseProtection-AllApps-AnyPlatform-ForwardToDefenderforCloudApps",
+    "createdDateTime": "2023-04-13T06:59:58.9917629Z",
+    "modifiedDateTime": null,
+    "state": "enabledForReportingButNotEnforced",
+    "grantControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "all"
+        ],
+        "servicePrincipalRiskLevels": [],
+        "platforms": null,
+        "locations": null,
+        "times": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "None"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": []
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [],
+            "includeGroups": [
+                "5097f9ec-10fa-4acf-a242-1a568bf30f64"
+            ],
+            "excludeGroups": [
+                "53afd8d4-7ba6-4728-832b-34c5ac878d4a",
+                "54ab779f-a23c-40f2-a72d-99e627033a62"
+            ],
+            "includeRoles": [],
+            "excludeRoles": [],
+            "includeGuestsOrExternalUsers": null,
+            "excludeGuestsOrExternalUsers": null
+        }
+    },
+    "sessionControls": {
+        "disableResilienceDefaults": false,
+        "applicationEnforcedRestrictions": null,
+        "signInFrequency": null,
+        "persistentBrowser": null,
+        "continuousAccessEvaluation": null,
+        "secureSignInSession": null,
+        "cloudAppSecurity": {
+            "cloudAppSecurityType": "monitorOnly",
+            "isEnabled": true
+        }
+    }
+}
